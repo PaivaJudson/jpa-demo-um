@@ -1,9 +1,16 @@
 package com.jpa.cadastrocliente.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "CLIENTE")
 public class Cliente {
 
+    @Id
     private Integer id;
     private String nome;
 
